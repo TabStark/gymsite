@@ -1,0 +1,1036 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+header{
+    position: fixed;
+    top: 0px;
+}
+
+
+::-webkit-scrollbar-track
+{
+    
+	box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+	
+}
+
+::-webkit-scrollbar
+{
+    
+	width: 15px;
+	background-color: rgba(255, 255, 255, 0.521);
+}
+
+::-webkit-scrollbar-thumb
+{
+    display: block;
+	background-color: #dfe6e9;
+    box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+}
+
+
+body{
+    --primary-font-family: 'Tektur', cursive; 
+    --secondary-font-family: 'Poppins', sans-serif;
+    --primary-color: rgba(218, 218, 218, 0.991);
+    --secoundry-color: red;
+    width: 100%;
+    position: relative;
+    top: 100px;
+    background-image: url(images/gymstudios.jpg);
+    background-repeat: no-repeat;
+    
+
+}
+
+
+
+
+.container{
+    width: 100vw;
+    height: 100px;
+    border: 2px solid rgba(184, 133, 133, 0.352);
+    box-shadow: 15px 0px 35px 5px rgb(184, 133, 133);
+   background-color: rgba(218, 218, 218, 0.927);
+
+    
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    
+    
+}
+
+/* Brand */
+.brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.brand img{
+    display: inline-block;
+    /* border-radius: 50%; */
+    height: 70px;
+    width: 90px;
+    margin: 10px;
+}
+
+.brandname{
+    font-family: var(--primary-font-family);
+    font-size: 1.8rem;
+    margin: 8px;
+    
+
+    
+} 
+
+/* Menu */
+
+.menu ul li { 
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.menu ul li a{
+    display: inline-block;
+    padding: 5px;
+    margin: 10px; 
+    text-decoration: none;
+    font-family: var(--secondary-font-family);
+    font-size: 1.1rem;
+    color: black;
+}
+
+.menu ul li a:hover{
+    box-shadow: 0px 5px 5px rgb(96, 95, 95);
+    transform: scale(1.2);
+    transition: .3s;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Button */
+
+.loginbtn{
+    margin: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: var(--secondary-font-family);
+    font-size: 1.2rem;
+    border: 2px solid rgba(13, 13, 13, 0.299);
+    background-color: white;
+    border-radius: 5px;
+    
+    
+}
+
+.loginbtn a{
+    text-decoration: none;
+    color: black;
+}
+
+.loginbtn:hover{
+    box-shadow: 5px 5px 5px maroon;
+    border: 2px solid var(--secoundry-color);
+    transform: scale(1.2);
+    transition: .3s;
+    
+}
+
+.signupbtn{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    margin-right: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: var(--secondary-font-family);
+    font-size: 1.2rem;
+    color: white;
+    border: 2px solid rgba(13, 13, 13, 0.299);
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+
+.signupbtn a{
+    text-decoration: none;
+    color: black;
+}
+
+.signupbtn:hover{
+    box-shadow: 5px 5px 5px maroon;
+    border: 2px solid var(--secoundry-color);
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+
+/* Hamburger */
+.checkbtn{
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: var(--secoundry-color);
+}
+
+.hamburger{
+    display: none;
+    font-family: var(--secondary-font-family);
+}
+
+#check{
+    display: none;
+}
+
+/* about */
+
+
+.about{
+    color: white;
+    width: 100%;
+    font-family: var(--secondary-font-family);
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;  
+    -webkit-text-stroke: 1px red;  
+    
+}
+
+/* firstpage */
+
+.secondpage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 85%;
+    height: 350px;
+    margin: auto;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: rgba(218, 218, 218, 0.708);
+}
+
+.aboutgym{
+    display: inline-block;
+    width: 367px;
+    height: 87px;
+    text-align: justify;
+    font-family: var(--secondary-font-family);
+    font-size: 1rem;
+    margin: 55px 30px;
+
+}
+
+.aboutgym span{
+    font-weight: bold;
+}
+
+.arnoldimg img{
+    display: inline-block;
+    width: 330px;
+    height: 228px;
+    margin: 55px 30px;
+    border-radius: 10px;
+}
+
+
+
+.arnoldimg img:active{
+    background-image: url(images/gold.png);
+    
+}
+
+
+/* secondpage */
+
+.firstpage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 30px;
+    width: 85%;
+    height: 360px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: rgba(218, 218, 218, 0.708);
+}
+
+.plan{
+    font-family: var(--secondary-font-family);
+    font-size: 2.5rem;
+    text-align: center;
+    
+
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+
+.service img{
+    height: 140px;
+    width: 110px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid red;
+    box-shadow: 0px 0px 10px rgb(230, 86, 86);
+}
+
+.start{
+    width: 280px;
+    height: 60px;
+    margin-left: 75px;
+    margin-right: 50px;
+    font-family: var(--secondary-font-family);
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;;
+
+}
+.start a{
+    text-decoration: none;
+    color: black;
+}
+.start:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.rightcontent img{
+    height: 270px;
+    width: 366px;
+    margin: 30px 0px;
+    border-radius: 15px;
+    border: 2px solid red;
+    box-shadow: 0px 0px 50px rgb(230, 86, 86);
+}
+
+/* thirdpage */
+
+.thirdpage{
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+
+}
+
+.support{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+
+.support a img{
+    height: 150px;
+    width: 130px;
+    
+}
+
+.support span{
+    margin: 0px 20px;
+    width: 340px;
+    height: 140px;
+    font-family: var(--secondary-font-family);
+    font-size: .9rem;
+    text-align: justify;
+
+}
+
+
+.tools{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+
+.tools a img{
+    height: 150px;
+    width: 150px;
+}
+
+.tools span{
+    margin: 0px 20px;
+    width: 340px;
+    height: 140px;
+    font-family: var(--secondary-font-family);
+    font-size: .9rem;
+    text-align: justify;
+}
+
+.convenience{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+
+.convenience a img{
+    height: 130px;
+    width: 120px;
+}
+
+.convenience span{
+    margin: 0px 20px;
+    width: 340px;
+    height: 140px;
+    font-family: var(--secondary-font-family);
+    font-size: .9rem;
+    text-align: justify;
+}
+
+.community{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+
+.community a img{
+    height: 130px;
+    width: 120px;
+}
+
+.community span{
+    margin: 0px 20px;
+    width: 340px;
+    height: 140px;
+    font-family: var(--secondary-font-family);
+    font-size: .9rem;
+    text-align: justify;
+}
+
+/* footer */
+
+.foot{
+    display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(168, 165, 165);
+    
+}
+
+.aboutus{
+    font-size: 1.2rem;
+    font-family: var(--secondary-font-family);
+  
+
+}
+
+.aboutus ul li{
+    list-style: none;
+}
+
+.aboutus ul li a{
+    text-decoration: none;
+    font-size: .7rem;
+    color: rgb(90, 83, 83);
+}
+
+.membership{
+    font-size: 1.2rem;
+    font-family: var(--secondary-font-family);
+  
+
+}
+
+.membership ul li{
+    list-style: none;
+}
+
+.membership ul li a{
+    text-decoration: none;
+    font-size: .7rem;
+    color: rgb(90, 83, 83);
+}
+
+.club{
+    font-size: 1.2rem;
+    font-family: var(--secondary-font-family);
+  
+
+}
+
+.club ul li{
+    list-style: none;
+}
+
+.club ul li a{
+    text-decoration: none;
+    font-size: .7rem;
+    color: rgb(90, 83, 83);
+}
+
+.policies{
+    font-size: 1.2rem;
+    font-family: var(--secondary-font-family);
+  
+
+}
+
+.policies ul li{
+    list-style: none;
+}
+
+.policies ul li a{
+    text-decoration: none;
+    font-size: .7rem;
+    color: rgb(90, 83, 83);
+}
+
+.customer{
+    font-size: 1.2rem;
+    font-family: var(--secondary-font-family);
+  
+
+}
+
+.customer ul li{
+    list-style: none;
+}
+
+.customer ul li a{
+    text-decoration: none;
+    font-size: .7rem;
+    color: rgb(90, 83, 83);
+}
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 982px){
+
+    .plan {
+        font-size: 2rem;
+    }
+
+    .service img {
+        height: 130px;
+        width: 100px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 15px;
+        border: 2px solid red;
+        box-shadow: 0px 0px 10px rgb(230, 86, 86);
+    }
+
+    .rightcontent img {
+        height: 238px;
+        width: 266px;
+        border-radius: 15px;
+        border: 2px solid red;
+        box-shadow: 0px 0px 50px rgb(230, 86, 86);
+    }
+}
+
+@media (max-width: 865px){
+    .plan {
+        font-size: 1.8rem;
+    }
+
+    .service img {
+        height: 100px;
+        width: 80px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 15px;
+        border: 2px solid red;
+        box-shadow: 0px 0px 10px rgb(230, 86, 86);
+    }
+
+    .rightcontent img {
+        height: 200px;
+        width: 206px;
+        border-radius: 15px;
+        border: 2px solid red;
+        box-shadow: 0px 0px 50px rgb(230, 86, 86);
+    }
+}
+@media (max-width:966px){
+    .aboutgym {
+        width: 500px;
+        height: 137px;
+        text-align: justify;
+        font-family: var(--secondary-font-family);
+        font-size: .9rem;
+        margin: 10px 30px;
+    }
+
+    .arnoldimg img {
+        display: inline-block;
+        width: 300px;
+        height: 170px;
+        margin: 15px 30px;
+        border-radius: 10px;
+    }
+    .aboutus {
+        font-size: 1rem;
+    }
+
+    .membership {
+        font-size: 1rem;
+    }
+
+    .club {
+        font-size: 1rem;
+    }
+
+    .policies {
+        font-size: 1rem;
+    }
+
+    .customer {
+        font-size: 1rem;
+    }
+
+    .aboutus ul li a {
+        font-size: .6rem;
+    
+    }
+
+    .membership ul li a {
+        font-size: .6rem;
+    
+    }
+
+    .club ul li a {
+        font-size: .6rem;
+    
+    }
+
+    .policies ul li a {
+        font-size: .6rem;
+    
+    }
+
+    .customer ul li a {
+        font-size: .6rem;
+    
+    }
+   
+}
+
+@media (max-width:894px){
+    .aboutgym {
+        width: 367px;
+        height: 137px;
+        text-align: justify;
+        font-family: var(--secondary-font-family);
+        font-size: .8rem;
+        margin: 10px 30px;
+    }
+
+    .arnoldimg img {
+        display: inline-block;
+        width: 270px;
+        height: 150px;
+        margin: 15px 30px;
+        border-radius: 10px;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    .aboutgym {
+        display: inline-block;
+        width: 367px;
+        height: 87px;
+        text-align: justify;
+        font-family: var(--secondary-font-family);
+        font-size: .8rem;
+        margin: 35px 20px;
+    }
+
+    .arnoldimg img {
+        display: inline-block;
+        width: 230px;
+        height: 128px;
+        margin: 35px 20px;
+        border-radius: 10px;
+    }
+    .firstpage {
+        padding: 10px;
+    }
+
+    .plan {
+        font-size: 1.4rem;
+    }
+
+    .start {
+        width: 280px;
+        height: 50px;
+        margin-left: 75px;
+        margin-right: 50px;
+        font-size: .9rem;
+        
+    }
+
+}
+
+@media (max-width: 994px){
+
+    .container {
+        width: 100vw;
+        height: 87px;
+       
+    }
+
+    .brand img {
+        /* border-radius: 50%; */
+        height: 60px;
+        width: 84px;
+        margin: 10px 8px; 
+    }
+
+    .brandname {
+        font-family: var(--primary-font-family);
+        font-size: 1.8rem;
+        margin: 10px 8px;
+    }
+
+    .menu ul li a {
+        padding: 3px;
+        margin: 6px;
+        font-size: 1rem;
+        
+    }
+
+    .signupbtn {
+        margin: 7px;
+        /* padding-left: 5px;
+        padding-right: 5px; */
+        font-size: .9rem;
+        
+    }
+
+    .loginbtn {
+        margin: 7px;
+        padding-left: 13px;
+        padding-right: 13px;
+        font-size: .9rem;
+        
+    }
+
+}
+
+@media (max-width:900px) {
+
+    .container {
+        width: 100vw;
+        height: 80px;
+        
+    }
+        
+    .brand img {
+        display: inline-block;
+        /* border-radius: 50%; */
+        height: 55px;
+        width: 78px;
+        margin: 10px 8px;
+    }
+
+    .brandname {
+        font-family: var(--primary-font-family);
+        font-size: 1.5rem;
+        margin: 10px 8px;
+    }
+
+    .menu ul li a {
+        padding: 3px;
+        margin: 6px;
+        font-size: .9rem;
+        
+    }
+
+    .signupbtn {
+        margin: 7px;
+        /* padding-left: 5px;
+        padding-right: 5px; */
+        font-size: .8rem;
+        
+    }
+
+    .loginbtn {
+        margin: 7px;
+        padding-left: 13px;
+        padding-right: 13px;
+        font-size: .8rem;
+        
+    }
+
+    .about {
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+   
+}
+
+
+    @media (max-width: 764px){
+
+             .container {
+                width: 100vw;
+                height: 72px;
+            }
+
+            .brand img {
+                display: inline-block;
+                /* border-radius: 50%; */
+                height: 45px;
+                width: 60px;
+                margin: 10px 8px;
+            }
+            .brandname {
+                font-family: var(--primary-font-family);
+                font-size: 1rem;
+                margin: 10px 5px;
+            }
+
+            .menu ul li a {
+                padding: 3px;
+                margin: 4px;
+                font-size: 0.7rem;
+            }
+
+            .loginbtn {
+                margin: 5px;
+                padding-left: 11px;
+                padding-right: 11px;
+                font-size: .7rem;
+            }
+
+            .signupbtn {
+                margin: 5px;
+                font-size: .7rem;
+            }
+
+            .firstpage {
+                height: 460px;
+                
+            }
+        
+    }
+
+    @media (max-width:595px){
+
+            .checkbtn{
+                display: block;
+            }
+
+            .hamburger{
+                display: block;
+                flex-direction: column;
+                position: fixed;
+                width: 55%;
+                height: 100vh;
+                top: 71px;
+                left: -100%;
+                text-align: center;
+                background-color: rgb(168, 165, 165);
+                transition: all .5s;
+            }
+
+            .hamburger ul li{
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+
+                
+            }
+
+            .hamburger ul li a{
+                padding: 5px;
+                margin: 10px;
+                font-size: 14px;
+                color: black;
+                text-decoration: none;
+            }
+
+            .hamburger ul li a:hover{
+                border: 2px solid rgb(238, 79, 79);
+                border-radius: 5px;
+                color: white;
+                background-color: rgb(218, 53, 53);
+            }
+
+            #check:checked ~ .hamburger{
+                left: 0;
+            }
+
+            .menu{
+                display: none;
+            }
+
+            .button{
+                display: none;
+            }
+
+    }
+
+    @media (max-width:595px){
+
+        .brand img {
+            display: inline-block;
+            /* border-radius: 50%; */
+            height: 49px;
+            width: 66px;
+            margin: 10px 8px;
+        }
+
+        .brandname {
+            font-family: var(--primary-font-family);
+            font-size: 1.5rem;
+            margin: 10px 5px;
+        }
+
+    }
+
+    @media (max-width: 429px){
+        
+        .aboutgym {
+            width: 367px;
+            height: 187px;
+            
+        }
+        .secondpage {
+            height: 450px;
+            
+        }
+        .about {
+            font-size: 1.5rem;
+        }
+
+        .service {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .firstpage {
+            height: 700px;
+        }
+
+        .support span {
+            width: 200px;
+            height: 340px;
+        }
+
+        .tools span {
+            width: 200px;
+            height: 340px;
+        }
+
+        .convenience span {
+            width: 200px;
+            height: 340px;
+        }
+
+        .community span {
+            width: 200px;
+            height: 340px;
+        }
+
+        .start {
+            margin: auto;
+            width: 200px;
+            height: 50px;
+            font-size: .7rem;
+        }
+
+        .aboutus {
+            font-size: .8rem;
+        }
+        .aboutus ul li a {
+            font-size: .5rem;
+        }
+
+        .membership {
+            font-size: .8rem;
+        }
+
+        .membership ul li a {
+            font-size: .5rem;
+        }
+
+        .club {
+            font-size: .8rem;
+        }
+
+        .club ul li a {
+            font-size: .5rem;
+        }
+
+        .policies {
+            font-size: .8rem;
+        }
+
+        .policies ul li a {
+            font-size: .5rem;
+        }
+
+        .customer {
+            font-size: .8rem;
+        }
+        
+        .customer ul li a {
+            font-size: .5rem;
+        }
+    }
+
+   
+    

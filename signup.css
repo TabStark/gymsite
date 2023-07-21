@@ -1,0 +1,255 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+header{
+    position: fixed;
+    top: 0px;
+}
+
+body{
+    --primary-font-family: 'Poppins', sans-serif;
+    --secondary-font-family: 'Tektur', cursive; 
+    background-image: url(images/gymstudios.jpg);
+    background-repeat: no-repeat;
+    /* background: rgb(87, 3, 3); */
+    /* background: linear-gradient(90deg, gb(87, 3, 3) 0%, rgba(0,212,255,1) 100%); */
+
+}
+
+.navbar{
+    width: 100vw;
+    height: 100px;
+    border: 2px solid rgba(184, 133, 133, 0.352);
+    box-shadow: 15px 0px 35px 5px rgb(184, 133, 133);
+   background-color: rgba(218, 218, 218, 0.708);
+
+    
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    
+    
+}
+
+/* Brand */
+.brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.brand img{
+    display: inline-block;
+    /* border-radius: 50%; */
+    height: 70px;
+    width: 90px;
+    margin: 10px;
+}
+
+.brandname{
+    font-family: var(--secondary-font-family);
+    font-size: 1.8rem;
+    margin: 8px;
+      
+} 
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    justify-items: center;
+    align-items: center;
+    border: 2px solid red;
+    background-color: rgb(233, 229, 229);
+    height: 400px;
+    width: 400px;
+    padding:20px;
+    margin: 200px auto;
+    border-radius: 20px;
+
+}
+
+.name{
+    font-family: var(--primary-font-family);
+    font-size: .9rem;
+
+}
+
+.name input{
+    height: 25px;
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid gray;
+}
+
+.name input:focus{
+    outline: none;
+    border: 2px solid red;
+
+}
+
+
+.email{
+    font-family: var(--primary-font-family);
+    font-size: .9rem;
+
+}
+
+.email input{
+    height: 25px;
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid gray;
+}
+
+.email input:focus{
+    outline: none;
+    border: 2px solid red;
+
+}
+
+.password{
+    font-family: var(--primary-font-family);
+    font-size: .9rem;
+
+}
+
+.password input{
+    height: 25px;
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid gray;
+}
+
+.password input:focus{
+    outline: none;
+    border: 2px solid red;
+
+}
+
+
+.button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.button button{
+    height: 30px;
+    width: 120px;
+
+} 
+
+#signup{
+    margin: 10px;
+    font-family: var(--primary-font-family);
+    font-size: 1rem;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: rgba(217, 168, 168, 0.596);
+    color: black;
+    cursor: pointer;
+}
+
+#signup:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    box-shadow: 0px 0px 10px red;
+}
+
+#cancel{
+    margin: 10px;
+    font-family: var(--primary-font-family);
+    font-size: 1rem;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#cancel a{
+    text-decoration: none;
+    color: black;
+}
+#cancel:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    box-shadow: 0px 0px 10px red;
+}
+
+.login{
+    
+        font-family: var(--primary-font-family);
+        font-size: .7rem;
+    
+}
+
+.loginwithgoogle{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid gray;
+    height: 35px;
+    width: 250px;
+    border-radius: 10px;
+    /* padding: 6px 30px; */
+
+}
+
+.loginwithgoogle button{
+    /* text-align: center; */
+    font-family: var(--primary-font-family);
+    font-size: .9rem;
+    height: 30px;
+    width: 190px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.loginwithgoogle:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    box-shadow: 0px 0px 10px gray;
+}
+
+
+.loginwithgoogle img{
+    height: 23px;
+    width: 40px;
+}
+
+
+@media (max-width:425px) {
+
+    .container {
+        height: 430px;
+        width: 300px;
+        padding: 20px;
+        margin: 200px auto;
+        border-radius: 20px;
+    }
+
+}
